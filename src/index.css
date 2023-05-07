@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgb(33, 30, 30);
-}
 .navLink {
   font-family: "Inter";
   font-style: normal;
@@ -32,7 +29,7 @@ body {
   vertical-align: middle;
 }
 
-.sign-up {
+.cta-button {
   /* gradient/main */
 
   background: linear-gradient(225deg, #18c8ff 14.89%, #933ffe 85.85%);
@@ -48,4 +45,37 @@ body {
   border-radius: 10px;
   text-align: center;
   vertical-align: middle;
+}
+
+.login-page {
+  background: #1b1b1b;
+  height: 100vh;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: #16161e;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+input:focus {
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.login-small {
+  font-size: 14px;
+  line-height: 17px;
+  color: #898ca9;
+  margin-top: 4px;
+}
+
+.login-small .checkbox {
+  background-color: #16161e;
+  border-radius: 5px;
 }

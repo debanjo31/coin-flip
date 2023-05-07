@@ -78,7 +78,7 @@ const Header = () => {
           <button className="sign-in" onClick={() => navigate("/login")}>
             Sign in
           </button>
-          <button className="sign-up" onClick={() => navigate("/signup")}>
+          <button className="cta-button" onClick={() => navigate("/signup")}>
             Sign up
           </button>
         </div>
