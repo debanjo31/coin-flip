@@ -68,6 +68,13 @@ input:focus {
   color: white;
 }
 
+.Modal {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  padding: 10px;
+}
+
 .login-small {
   font-size: 14px;
   line-height: 17px;

@@ -22,7 +22,7 @@ function Login() {
       console.log(data);
     } catch (error) {
       console.error(error);
-      setErrorMessage("Incorrect email or password.");
+      setErrorMessage(error.message);
     }
   }
 
