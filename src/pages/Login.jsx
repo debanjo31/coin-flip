@@ -28,9 +28,9 @@ function Login() {
 
   return (
     <div className="login-page h-screen flex justify-center items-center">
-      <div className="w-1/2"></div>
-      <div className="w-1/2 ">
-        <div className="w-3/4  flex flex-col gap-8 align-center">
+      <div className="hidden sm:block sm:w-1/2"></div>
+      <div className="w-full sm:w-1/2">
+        <div className="sm:w-3/4 w-5/6 mx-auto  flex flex-col gap-8 align-center">
           <div className="login-header flex gap-4">
             <img src={logo} alt="coinflip login logo" />
             <h1 className="text-4xl text-white ">Crypto</h1>

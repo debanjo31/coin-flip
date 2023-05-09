@@ -8,7 +8,7 @@ function Signup() {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const [confirmPassword, setConfirmPassword] = useState(""); // new state variable
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
   async function handleSignUp(event) {
     event.preventDefault();
     const { email, password } = event.target.elements;
@@ -43,9 +43,9 @@ function Signup() {
 
   return (
     <div className="login-page h-screen flex justify-center items-center">
-      <div className="w-1/2"></div>
-      <div className="w-1/2 ">
-        <div className="w-3/4  flex flex-col gap-8 align-center">
+      <div className="hidden sm:block sm:w-1/2"></div>
+      <div className="w-full sm:w-1/2">
+        <div className="sm:w-3/4 w-5/6 mx-auto sm:mx-0  flex flex-col gap-8 align-center">
           <div className="login-header flex gap-4">
             <img src={logo} alt="coinflip login logo" />
             <h1 className="text-4xl text-white ">Crypto</h1>
@@ -107,10 +107,10 @@ function Signup() {
         isOpen={showModal}
         contentLabel="Confirm Account Modal"
         onRequestClose={closeModal}
-        className="Modal  z-10 bg-white"
+        className="Modal w-2/3 lg:w-3/6 shadow-lg z-10 bg-white"
         overlayClassName="Overlay"
       >
-        <h2 className="text-2xl ">Check your inbox</h2>
+        <h2 className="text-2xl mb-4">Check your inbox</h2>
         <p>
           We've sent a confirmation email to your inbox. Please follow the
           instructions in the email to confirm your account.
